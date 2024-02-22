@@ -1,0 +1,366 @@
+body , *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+      
+}
+
+html , body{scroll-behavior:smooth;}
+
+body{ 
+    font-family: "Archivo Black", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    background:#ffffff;
+    font-style: normal;}
+
+.d-flex{display:flex; flex-wrap:wrap;}
+
+.col-6{width:50% !important;}
+
+.col-3{width:30%!important;}
+
+.col-2{width:20% !important;}
+
+.w-75{width:75%;} .w-25{width:25%;}
+
+.bg-blue{background:#2b4eff;}
+
+nav{ position:relative; z-index:99; min-height:11.5%; padding:10px; box-shadow: 1px 1px 2px 2px #0000000d; background:white;  width:100%; padding-left:6.5%!important; padding-bottom:15px;}
+
+.logo-div > img {height:3em;}
+
+.logo-div,.menu-div{align-items:center; }
+
+.menu-div{justify-content:flex-end;}
+
+.logo-div > ul {
+    align-items:center;
+}
+
+.logo-div > *{
+    margin-left:25px;
+}
+
+.menu-div > *{margin-right:20px; cursor:pointer; font-size:22px;}
+
+ ul > li{
+    list-style-type:none;
+    margin-left:25px;
+    margin-top:7px;
+    font-size:15px;
+    cursor:pointer;
+    letter-spacing:1.5px;
+}
+
+button{
+    padding:12px 25px 12px 25px;
+    font-size:17px;
+    height:fit-content;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+}
+
+.mobile-rest-menu{
+    display:none;
+}
+
+.fixed-menu{
+    position:fixed;
+    width:30%;
+    top:0px;
+    z-index:999999999999999999999999999999999999999999999;
+    background:black;
+    height:100%;
+    left:70%;
+}
+
+.custom{
+    background:transparent !important;
+    color:#2b4eff !important;
+    border:2px solid #2b4eff !important;
+    
+}
+
+.main-content , .about{
+    min-height:60vh;
+    height:auto;
+    background:#f3f4f8;
+}
+
+.main-content > div{
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+   
+}
+
+
+
+.main-content > div:nth-child(1) > h1{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:60px;
+}
+
+
+span{
+font-family: "Sriracha", cursive;
+font-weight: 400;
+font-style: italic;
+color: #ff9f0d;
+font-size:20px;
+}
+
+ .main-content > div > p , .main-content > div > div{
+    margin-top:20px;
+}
+
+p {
+    line-height:1.8;
+    color: #53535b;
+    margin-top:15px;
+}
+
+.main-content > div:nth-child(2){
+    align-items:center;
+    justify-content:flex-end;
+   
+}
+
+.main-content > div > img{
+    width:55%; height:90%;
+}
+
+.courses , .about{
+    text-align:center;
+}
+
+h2{
+  font-size:40px;
+}
+
+
+
+
+.courses > div , .about > div > div {
+    width:90%;
+    margin-left:5%;
+    margin-top:65px !important;
+}
+
+.courses > div:nth-child(1) , .about > div {
+    width:60%;
+    margin-left:15%;
+    flex-wrap:nowrap;
+}
+
+.box{
+   
+    border:none;
+    border-radius:5px;
+    padding:15px;
+    box-shadow: 0px  4px 10px 0px rgba(0,0,0,10%);
+    column-gap:10px;
+}
+
+.courses-box {
+    flex-wrap:wrap;
+    row-gap:40px;
+}
+
+
+
+.box p{
+    margin-top:0px  !important;
+    text-align:left;
+}
+
+.about > div{
+    margin-top:65px;
+}
+
+.background-holder{
+    position:relative;
+    z-index:9;
+    background-image:url("https://19956213.fs1.hubspotusercontent-na1.net/hub/19956213/hubfs/academia/course-six.webp?width=593&height=386&name=course-six.webp");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    min-height:25vh;
+    height: auto;
+}
+
+.corse:nth-child(2) > .background-holder{
+    
+    background-image:url("https://19956213.fs1.hubspotusercontent-na1.net/hub/19956213/hubfs/academia/course-four.webp?width=593&height=386&name=course-four.webp")!important;
+   
+}
+
+.corse:nth-child(3) > .background-holder{
+
+background-image:url("https://19956213.fs1.hubspotusercontent-na1.net/hub/19956213/hubfs/academia/course-one.webp?width=593&height=386&name=course-one.webp");
+
+}
+
+.corse > div{
+  border-radius:5px;
+  
+}
+
+span.tag{
+    font-family: "Archivo Black", sans-serif;
+    font-style:normal;
+    font-size:15px;
+    color:white;
+    background:rgba(0,0,0,50%);
+    padding:7px;
+    border-radius:5.5px;
+    position:absolute;
+    top:12px;
+    left:12px;
+}
+
+.details{
+    background:white;
+    position:relative;
+    top:-10%;
+    z-index:9999999;
+    width:95%;
+    margin-left:2.5%;
+    padding:10px;
+    box-shadow: 0px 10px 20px 0px rgba(8,0,42,8%);
+
+}
+
+.details > * , .tutorial > *{margin-top:30px;}
+
+.details > div.d-flex > div{
+    width:33%;
+    text-align:center;
+    
+}
+
+.details > div.d-flex > div > *{
+    text-align:center;;
+}
+
+.details p{
+    font-size:14px;
+}
+
+
+.corse{
+    box-shadow:none;
+}
+
+.tutorial {}
+
+.tutorial > div{
+    width: 60% !important;
+    
+}
+
+.tutorial > div > div > *{
+    margin-top:15px;
+    
+}
+
+.tutorial  img{ height:72%; border-radius:3px; filter:brightness(
+    0.6
+)}
+
+
+
+
+.tutorial div.play-icon{
+    font-size:25px;
+    position:absolute;
+    left:45%;
+    padding:4%;
+    top:27%;
+    width:80px;
+    height:80px;
+    border-radius:100%;
+    cursor:pointer;
+    background:#2b4eff;
+    color:white;
+    z-index:777777777777;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.tutorial div > div:nth-child(2) >span{
+    width:80px;
+    height:80px;
+    animation:pulse 1.4s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+    animation-delay:calc(0.5s * var(--i));
+    animation-duration: 4s;
+    position:absolute;
+    border-radius:100%;
+    left:45%;
+    padding:4%;
+    top:27%;
+    border-radius:100%;
+    cursor:pointer;
+    background:#2b4eff;
+    opacity:0.5;
+    color:white;
+  
+}
+
+@keyframes pulse{
+    0%{transform:scale(1.3)}
+    50%{transform:scale(1.1)}
+    100%{transform:scale(1)}
+}
+
+footer{
+    padding:60px 30px 60px 30px;
+    background:#0e1133;
+    color:white;
+}
+
+footer > div > div {width:20%; line-height:1.4;}
+
+
+footer div p{color:#ffffffa3}
+
+footer a , footer i{
+    color:#2b4eff;
+    margin-left:10px;
+    
+}
+
+.social i{
+    font-size:30px;
+}
+
+@media (max-width:1040px){
+    .col-6 , .col-3 , .col-2{width:90% !important; text-align:left;}
+
+    .d-flex{row-gap:50px;}
+
+
+    .main-content > div:nth-child(2){
+        display:none;
+    }
+
+    .mobile-rest-menu{display:block}
+
+    .desktop-rest-menu{display:none;}
+
+    .desktop-menu{display:none;}
+}
+
+
+
+
+
+
+
+
