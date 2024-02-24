@@ -68,7 +68,7 @@
 
         <div class="main-content d-flex">
           <div style="display:inline-block" class="content col-6">
-          <span>Ready to Learn</span>
+          <span id="typewriter">Ready to Learn</span>
             <h1><strong>Better education for Better World</strong></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet adipiscing nam suspendisse et lobortis. Adipiscing auctor lobortis in lorem cursus cursus eget duis massa. Diam sem volutpat turpis condimentum.</p>
             <div style="gap:20px;" class="d-flex">
@@ -421,6 +421,14 @@
 
       let input = document.querySelector("input");
       let search_icon = document.querySelector("#search-icon");
+
+      let typewriter = document.querySelector("#typewriter");
+
+      typewriter.style.width = typewriter.clientWidth+5+"px";
+
+      Window.onresize = ()=>{
+        typewriter.style.width = typewriter.clientWidth+5+"px";
+      }
 
       btn.onclick = ()=>{
         document.body.scrollTop=0;

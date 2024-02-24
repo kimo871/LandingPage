@@ -164,7 +164,7 @@ nav  form > i{
    
 }
 
-.main-content span{display:inline-block !important; width:40%; padding-right:5px;  border-right:2px solid black; overflow:hidden; white-space:nowrap; animation : typing 4s steps(16) infinite alternate-reverse, crsr 0.4s step-end infinite alternate ;letter-spacing: 5px; }
+.main-content span{display:inline-block !important; padding-right:5px;  border-right:2px solid black; overflow:hidden; white-space:nowrap; animation : typing 4s steps(16) infinite alternate-reverse, crsr 0.4s step-end infinite alternate ;letter-spacing: 5px; }
 
 @keyframes crsr{
     50%{border-right-color:transparent}
@@ -444,12 +444,14 @@ footer a , footer i{
 
     .fixed-menu{display: block !important;}
 
-    .logo-div{width:30%;}
+    .logo-div{width:40%;}
 
-    .menu-div{width:70%;}
+    .logo-div img{height:2.1em}
+
+    .menu-div{width:60%;}
 
 
-    nav form{width:80%;}
+    nav form{width:60%;}
 
 
     .tutorial , .courses , .about{padding:10px;}
