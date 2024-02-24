@@ -14,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
 
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -36,20 +35,40 @@
             </div>
 
             <div class="menu-div d-flex  w-25">
-              <i style="font-size:22px; color:#000000b0;" class="fa-solid fa-magnifying-glass"></i>
-              <div class="desktop-rest-menu"> <button class="bg-blue">Contact us</button></div>
-              <div class="mobile-rest-menu"> <i class="fa-solid fa-align-justify"></i></div>
+              <form >
+                <i id="search-icon" style=" color:#000000b0; display:block" class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="w-100 h-100" placeholder="Type your search.."/>
+              </form>
+              
+              <div style="" class="desktop-rest-menu w-50"> <button class="bg-blue">Contact us</button></div>
+              <div class="mobile-rest-menu"> <i id="rest-icon" class="fa-solid fa-align-justify"></i></div>
             </div>
 
             <div class="fixed-menu">
-
-            </div>
-
+                <i id="close-icon" style="float:right;" class="fa-solid fa-close"></i>
+                <ul>
+                  <li>Home</li>
+                  <li>Courses &nbsp;<i class="fa-solid fa-caret-right"></i> 
+                  <ul class="nested">
+                    <li>Gallery</li>
+                    <li>Blog</li>
+                  </ul>
+                  </li>
+                  <li>Gallery</li>
+                  <li>Blog</li>
+                  <li>About &nbsp;<i class="fa-solid fa-caret-right"></i>
+                    <ul class="nested">
+                      <li>About College</li>
+                      <li>About School</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
         </nav>
 
         <div class="main-content d-flex">
-          <div style="padding:100px;" class="content col-6">
-            <span>Ready to Learn</span>
+          <div style="display:inline-block" class="content col-6">
+          <span>Ready to Learn</span>
             <h1><strong>Better education for Better World</strong></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet adipiscing nam suspendisse et lobortis. Adipiscing auctor lobortis in lorem cursus cursus eget duis massa. Diam sem volutpat turpis condimentum.</p>
             <div style="gap:20px;" class="d-flex">
@@ -61,7 +80,7 @@
           <div class="col-6"><img src="../assets/img/banner-one.webp"/> </div>
         </div>
 
-        <div style="padding:60px 30px 60px 30px;" class="courses">
+        <div  class="courses">
             <div>
             <span>What We Offer</span>
             <h2>Our Courses</h2>
@@ -120,7 +139,7 @@
 
             </div>
 
-            <div style="padding:60px 30px 60px 30px;"class="about">
+            <div class="about">
                 <div>
                 <h2>Some Facts About us</h2>
                 <div style="justify-content:space-around; " class="d-flex">
@@ -144,7 +163,7 @@
            
             </div>
 
-            <div style="padding:60px 30px 60px 30px;" class="courses">
+            <div class="courses">
                 <div>
                 <span>What's Trending</span>
                 <h2>Some popular courses</h2>
@@ -318,7 +337,7 @@
 
             </div>
 
-            <div style="padding:60px 30px 60px 30px;"  class="tutorial">
+            <div   class="tutorial">
               <div style="width:100%!important;" class="d-flex">
                 <div class="col-6" style="text-align:left; display:flex; flex-direction:column;">
                   <span>Why To enroll?</span>
@@ -396,9 +415,34 @@
 
     <script>
       let btn = document.querySelector("#pull");
+      let rest = document.querySelector("#rest-icon");
+      let close = document.querySelector("#close-icon");
+      let rest_div = document.querySelector(".fixed-menu");
+
+      let input = document.querySelector("input");
+      let search_icon = document.querySelector("#search-icon");
+
       btn.onclick = ()=>{
         document.body.scrollTop=0;
       }
+
+      rest.onclick = ()=>{
+        rest_div.classList.add("stretch");
+        document.body.style="overflow-y:hidden";
+      }
+
+      close.onclick = () => {
+        rest_div.classList.remove("stretch");
+        document.body.style="overflow-y:visible";
+      }
+
+      search_icon.onclick = ()=>{
+        search_icon.classList.toggle("fa-close")
+        input.classList.toggle("full");
+        
+      }
+
+
     </script>
     
 </body>
